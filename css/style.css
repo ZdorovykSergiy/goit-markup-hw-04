@@ -151,6 +151,31 @@ ul {
 .principle-item {
   width: 270px;
 }
+.principle-list .principle-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.principle-list .principle-item:nth-child(1)::before {
+  background-image: url(../image/antenna.svg);
+  background-size: 66px;
+}
+.principle-list .principle-item:nth-child(2)::before {
+  background-image: url(../image/clock.svg);
+  background-size: 67px;
+}
+.principle-list .principle-item:nth-child(3)::before {
+  background-image: url(../image/diagram.svg);
+  background-size: 70px;
+}
+.principle-list .principle-item:nth-child(4)::before {
+  background-image: url(../image/astronaut.svg);
+  background-size: 70px;
+}
 
 .works-item:not(:last-child) {
   margin-right: 30px;
