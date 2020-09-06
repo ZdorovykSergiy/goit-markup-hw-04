@@ -63,6 +63,22 @@ ul {
 .contact-item {
   margin-left: auto;
 }
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts-icon.mail {
+  width: 16px;
+  height: 11px;
+}
+.contacts-icon.phone {
+  width: 10px;
+  height: 15px;
+}
+.contacts .item:hover,
+.contacts .item:focus {
+  color: var(--accent-color);
+}
 .nav,
 .contack-link,
 .name-comand {
@@ -80,8 +96,25 @@ ul {
   letter-spacing: 0.06em;
   line-height: 1, 36;
 }
+
 .main-section {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../image/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -219,7 +252,7 @@ figure {
 .text-profesional {
   color: var(--first-text-color);
 }
-.main-section,
+
 footer {
   background-color: var(--section-one-color);
   padding-top: 60px;
